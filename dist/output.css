@@ -538,3 +538,12 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(168 85 247 / var(--tw-bg-opacity));
 }
+
+.bg-purple-hero {
+  --tw-bg-opacity: 1;
+  background-color: rgb(96 24 247 / var(--tw-bg-opacity));
+}
+
+.font-poppins {
+  font-family: Poppins, sans;
+}
