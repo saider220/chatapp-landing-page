@@ -12,18 +12,18 @@
     <link rel="stylesheet" href="output.css" />
     <title>Chatapp</title>
   </head>
-  <body class="m-0 p-0 overflow-x-hidden scrollbar-hide">
-    <div class="bg-purple-hero h-screen w-screen">
+  <body class="m-0 p-0 scrollbar-hide">
+    <div class="bg-purple-hero h-[1240px] w-screen laptop:h-[1000px]">
       <header class="static flex justify-between max-w-[1640px] mx-auto">
         <div class="inline-block ml-[100px] pt-[38px]">
           <img src="/dist/images/chatapp.svg" alt="chatapp logo" />
         </div>
         <div class="inline-block mr-[100px] pt-[40px]">
           <ul class="text-white font-roboto font-medium text-[14px]">
-            <a class="pr-[50px]" href="#">Product</a>
-            <a class="pr-[50px]" href="#">Services</a>
-            <a class="pr-[50px]" href="#">Contact</a>
-            <a class="pr-[50px]" href="#">Log in</a>
+            <a class="pr-[50px] laptop:pr-[30px]" href="#">Product</a>
+            <a class="pr-[50px] laptop:pr-[30px]" href="#">Services</a>
+            <a class="pr-[50px] laptop:pr-[30px]" href="#">Contact</a>
+            <a class="pr-[50px] laptop:pr-[30px]" href="#">Log in</a>
             <a class="bg-white/10 py-[10px] px-[20px] rounded-full" href="#"
               >Try It Free</a
             >
@@ -31,92 +31,96 @@
         </div>
       </header>
       <section
-        class="flex h-screen justify-between max-w-[1640px] mx-auto z-50"
+        class="flex h-screen justify-between max-w-[1640px] mx-auto z-50 laptop:block"
       >
-        <div class="pt-[320px] ml-[100px]">
+        <div
+          class="w-[400px] pt-[320px] ml-[100px] shrink-0 mr-20 laptop:pt-[50px] laptop:mx-auto laptop:w-[600px]"
+        >
           <h1
-            class="text-white font-poppins text-[80px] font-semibold max-w-md tracking-tight leading-[101px]"
+            class="text-white font-poppins text-[80px] font-semibold tracking-tight leading-[101px] laptop:text-[48px] laptop:text-center laptop:leading-normal"
           >
             Have your best chat
           </h1>
-          <p class="text-white text-[24px] font-roboto mb-[70px]">
+          <p
+            class="text-white text-[24px] font-roboto mb-[70px] laptop:text-[20px] laptop:mb-[30px] laptop:text-center"
+          >
             Fast, easy & unlimited team chat.
           </p>
-          <a
-            class="text-purple-hero text bg-teal px-10 py-4 rounded-full font-roboto font-semibold text-xl mr-5"
-            href="#"
-            >Try it Free</a
-          >
-          <a
-            class="text-white bg-transparent px-10 py-4 rounded-full font-roboto font-semibold text-xl border-2 border-teal"
-            href="#"
-            >Get a Demo</a
-          >
+          <div class="laptop:text-center">
+            <a
+              class="text-purple-hero text bg-teal px-10 py-4 rounded-full font-roboto font-semibold text-xl mr-5 laptop:px-8 laptop:py-3 laptop:text-[16px]"
+              href="#"
+              >Try it Free</a
+            >
+            <a
+              class="text-white bg-transparent px-10 py-4 rounded-full font-roboto font-semibold text-xl border-2 border-teal laptop:px-8 laptop:py-3 laptop:text-[16px]"
+              href="#"
+              >Get a Demo</a
+            >
+          </div>
         </div>
-        <div class="pt-[210px] mr-[80px]">
+        <div
+          class="max-w-[800px] pt-[210px] mr-[80px] laptop:mx-auto laptop:pt-[50px] laptop:max-w-[600px] laptop:pl-[30px]"
+        >
           <img
-            class="max-w-[800px] object-cover"
+            class="object-cover"
             src="/dist/images/hero-img.png"
             alt="Two people chatting"
           />
         </div>
       </section>
     </div>
-    <section class="h-screen bg-white pt-[90px]">
+    <section
+      class="h-[1340px] bg-white pt-[90px] px-[100px] overflow-hidden laptop:h-[70vh]"
+    >
       <h2
-        class="text-center text-[40px] font-poppins font-medium text-gray-600 mb-[30px]"
+        class="text-center text-[40px] font-poppins font-medium text-gray-600 mb-[30px] laptop:text-[30px] laptop:mb-[10px]"
       >
         Instant Team Chats
       </h2>
       <p
-        class="text-gray-900/70 text-center font-roboto text-[24px] leading-[142%] max-w-[570px] mx-auto mb-[25px]"
+        class="text-gray-900/70 text-center font-roboto text-[24px] leading-[142%] max-w-[570px] mx-auto mb-[25px laptop:text-[18px]"
       >
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
         ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
         dis parturient montes, nascetur ridiculus mus. Donec quam felis,
         ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
       </p>
-      <img
-        class="max-h-[65vh] mx-auto"
-        src="/dist/images/chatting.jpg"
-        alt="using the chatting app"
-      />
+      <div class="max-w-[1240px] mx-auto pt-[100px] laptop:pt-[50px]">
+        <img src="/dist/images/chatting.jpg" alt="using the chatting app" />
+      </div>
     </section>
-    <section class="h-[70vh] bg-purple-hero/10 pt-[140px]">
-      <div class="flex justify-between max-w-[1640px] mx-auto px-[100px]">
-        <div>
-          <img
-            class="max-w-[640px]"
-            src="/dist/images/business.png"
-            alt="A small business meeting"
-          />
+    <section class="h-[1000px] bg-purple-hero/10 pt-[200px]">
+      <div class="flex justify-evenly max-w-[1640px] mx-auto px-[100px] laptop:px-[50px]">
+        <div class="max-w-[600px] laptop:ml-[-200px] laptop-transition:max-w-[450px] desktop-transition:max-w-[425px]">
+          <img src="/dist/images/business.png" alt="A small business meeting" />
         </div>
-        <div class="max-w-[450px]">
+        <div class="max-w-[450px] laptop:max-w-[600px] laptop:mx-auto">
           <h2
-            class="text-[45px] font-poppins font-medium text-gray-600 mb-[10px] leading-[60px] mt-[10%]"
+            class="text-[45px] laptop:text-[36px] font-poppins font-medium text-gray-600 mb-[10px] leading-[60px] laptop:leading-[40px] mt-[10%] laptop:max-w-[350px]"
           >
             Perfect Solution for Small Businesses
           </h2>
-          <p class="text-gray-600/70 font-roboto text-[24px] mb-[50px]">
+          <p class="text-gray-600/70 font-roboto text-[24px] laptop:text-[20px] mb-[50px] laptop:max-w-[350px] laptop:mb-[20px]">
             Pricing plants that fit like a glove.
           </p>
           <a
-            class="text-purple-hero text bg-teal px-10 py-4 rounded-full font-roboto font-semibold text-xl mr-5"
+            class="text-purple-hero text bg-teal px-10 py-4 rounded-full font-roboto font-semibold text-xl mr-5 laptop:px-8 laptop:py-3 laptop:text-[16px]"
             href="#"
             >Try it Free</a
           >
           <a
-            class="text-purple-hero bg-transparent px-10 py-4 rounded-full font-roboto font-semibold text-xl border-2 border-teal"
+            class="text-purple-hero bg-transparent px-10 py-4 rounded-full font-roboto font-semibold text-xl border-2 border-teal laptop:px-8 laptop:py-3 laptop:text-[16px]"
             href="#"
             >Get a Demo</a
           >
           <hr
-            class="h-1 border-0 mt-[100px] rounded bg-gray-600/25 max-w-[10vw] mb-[35px]"
+            class="h-1 border-0 mt-[100px] laptop:mt-[40px] rounded bg-gray-600/25 max-w-[10vw] mb-[35px] laptop:max-w-[15vw]"
           />
-          <div class="flex justify-between items-start">
+          <div class="flex justify-between items-start laptop:max-w-[350px] laptop:flex-col laptop:mt-[50px]">
             <img src="/dist/images/stars.svg" alt="5 stars" />
             <p
-              class="font-roboto text-[20px] leading-[142%] text-gray-600/70 max-w-[300px]"
+              class="font-roboto text-[20px] leading-[142%] text-gray-600/70 max-w-[300px] laptop:mt-[20px]"
             >
               <span class="font-medium">5,200 businesses</span> use ChatApp and
               they rate it as <span class="font-medium">5-stars.</span>
@@ -125,39 +129,119 @@
         </div>
       </div>
     </section>
-    <section class="bg-white h-[50vh]">
-      <div class="max-w-[1640px] px-[100px] flex mx-auto h-full pt-[80px] justify-between">
+    <section class="bg-white">
+      <div
+        class="max-w-[1640px] px-[100px] flex mx-auto pt-[80px] justify-between laptop:flex-wrap"
+      >
         <div class="pt-[5px]">
-          <img class="mb-[16px]" src="/dist/images/chatapp-purple.svg" alt="logo" />
-          <p class="font-roboto font-[14px] leading-[142%] text-gray-950/70 pb-[10px] mb-[480px]">The last team chat you will ever need.</p>
-          <p class="font-roboto font-[14px] leading-[142%] text-gray-950/70">© Copyright ChatApp Inc.</p>
+          <img
+            class="mb-[16px]"
+            src="/dist/images/chatapp-purple.svg"
+            alt="logo"
+          />
+          <p
+            class="font-roboto font-[14px] leading-[142%] text-gray-950/70 pb-[10px] w-[150px]"
+          >
+            The last team chat you will ever need.
+          </p>
         </div>
-        <div></div>
-        <div>
-          <h3 class="font-roboto font-[1rem] tracking-tight text-gray-950 mb-[14px]">Help</h3>
-          <p class="font-roboto font-[14px] leading-[142%] text-gray-950/70 pb-[10px]">Support</p>
-          <p class="font-roboto font-[14px] leading-[142%] text-gray-950/70 pb-[10px]">Knowledgebase</p>
-          <p class="font-roboto font-[14px] leading-[142%] text-gray-950/70 pb-[10px]">Tutorials</p>
+        <div class="laptop:hidden"></div>
+        <div class="h-full laptop:pt-[10px]">
+          <h3
+            class="font-roboto font-[1rem] tracking-tight text-gray-950 mb-[14px] w-[150px]"
+          >
+            Help
+          </h3>
+          <p
+            class="font-roboto font-[14px] leading-[142%] text-gray-950/70 pb-[10px] w-[150px]"
+          >
+            Support
+          </p>
+          <p
+            class="font-roboto font-[14px] leading-[142%] text-gray-950/70 pb-[10px] w-[150px]"
+          >
+            Knowledgebase
+          </p>
+          <p
+            class="font-roboto font-[14px] leading-[142%] text-gray-950/70 pb-[10px] w-[150px]"
+          >
+            Tutorials
+          </p>
         </div>
-        <div>
-          <h3 class="font-roboto font-[1rem] tracking-tight text-gray-950 mb-[14px]">Features</h3>
-          <p class="font-roboto font-[14px] leading-[142%] text-gray-950/70 pb-[10px]">Screen Sharing</p>
-          <p class="font-roboto font-[14px] leading-[142%] text-gray-950/70 pb-[10px]">iOS & Android Apps</p>
-          <p class="font-roboto font-[14px] leading-[142%] text-gray-950/70 pb-[10px]">File Sharing</p>
-          <p>User Managment</p>
+        <div class="h-full laptop:pt-[10px]">
+          <h3
+            class="font-roboto font-[1rem] tracking-tight text-gray-950 mb-[14px] w-[150px]"
+          >
+            Features
+          </h3>
+          <p
+            class="font-roboto font-[14px] leading-[142%] text-gray-950/70 pb-[10px] w-[150px]"
+          >
+            Screen Sharing
+          </p>
+          <p
+            class="font-roboto font-[14px] leading-[142%] text-gray-950/70 pb-[10px] w-[150px]"
+          >
+            iOS & Android Apps
+          </p>
+          <p
+            class="font-roboto font-[14px] leading-[142%] text-gray-950/70 pb-[10px] w-[150px]"
+          >
+            File Sharing
+          </p>
+          <p>User Management</p>
         </div>
-        <div>
-          <h3 class="font-roboto font-[1rem] tracking-tight text-gray-950 mb-[14px]">Company</h3>
-          <p class="font-roboto font-[14px] leading-[142%] text-gray-950/70 pb-[10px]">About Us</p>
-          <p class="font-roboto font-[14px] leading-[142%] text-gray-950/70 pb-[10px]">Careers</p>
-          <p class="font-roboto font-[14px] leading-[142%] text-gray-950/70 pb-[10px]">Contact Us</p>
+        <div class="h-full laptop:pt-[10px]">
+          <h3
+            class="font-roboto font-[1rem] tracking-tight text-gray-950 mb-[14px] w-[150px]"
+          >
+            Company
+          </h3>
+          <p
+            class="font-roboto font-[14px] leading-[142%] text-gray-950/70 pb-[10px] w-[150px]"
+          >
+            About Us
+          </p>
+          <p
+            class="font-roboto font-[14px] leading-[142%] text-gray-950/70 pb-[10px] w-[150px]"
+          >
+            Careers
+          </p>
+          <p
+            class="font-roboto font-[14px] leading-[142%] text-gray-950/70 pb-[10px] w-[150px]"
+          >
+            Contact Us
+          </p>
         </div>
-        <div>
-          <h3 class="font-roboto font-[1rem] tracking-tight text-gray-950 mb-[14px]">Contact Us</h3>
-          <p class="font-roboto font-[14px] leading-[142%] text-gray-950/70 pb-[10px]">info@chatapp.com</p>
-          <p class="font-roboto font-[14px] leading-[142%] text-gray-950/70 pb-[10px]">1-800-200-300</p>
-          <p class="font-roboto font-[14px] leading-[142%] text-gray-950/70 pb-[10px]">3500 Deer Creek Rd Palo Alto, CA</p>
+        <div class="h-full laptop:pt-[10px]">
+          <h3
+            class="font-roboto font-[1rem] tracking-tight text-gray-950 mb-[14px] w-[150px]"
+          >
+            Contact Us
+          </h3>
+          <p
+            class="font-roboto font-[14px] leading-[142%] text-gray-950/70 pb-[10px] w-[150px]"
+          >
+            info@chatapp.com
+          </p>
+          <p
+            class="font-roboto font-[14px] leading-[142%] text-gray-950/70 pb-[10px] w-[150px]"
+          >
+            1-800-200-300
+          </p>
+          <p
+            class="font-roboto font-[14px] leading-[142%] text-gray-950/70 pb-[10px] w-[150px]"
+          >
+            3500 Deer Creek Rd Palo Alto, CA
+          </p>
         </div>
+      </div>
+      <div class="max-w-[1640px] mx-auto mt-[150px]">
+        <p
+          class="font-roboto font-[14px] leading-[142%] text-gray-950/70 ml-[100px]"
+        >
+          © Copyright ChatApp Inc.
+        </p>
       </div>
     </section>
   </body>

@@ -10,6 +10,13 @@ module.exports = {
       fontFamily: {
         'poppins': ['Poppins', 'sans'], 
         'roboto': ['Roboto', 'sans'], 
+      },
+      screens: {
+        'desktop-transition': {'max': '1200px'},
+        'laptop': {'max': '1024px'},
+        'laptop-transition': {'max': '900px'},
+        'tablet': {'max': '768px'},
+        'mobile': {'max': '320px'},
       }
     },
   },
