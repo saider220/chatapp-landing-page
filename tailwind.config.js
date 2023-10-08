@@ -16,7 +16,9 @@ module.exports = {
         'laptop': {'max': '1024px'},
         'laptop-transition': {'max': '900px'},
         'tablet': {'max': '768px'},
-        'mobile': {'max': '320px'},
+        'mobile-L': {'max': '425px'},
+        'mobile-M': {'max': '375px'},
+        'mobile-S': {'max': '320px'}
       }
     },
   },

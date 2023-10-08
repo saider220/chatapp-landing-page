@@ -611,12 +611,36 @@ video {
   margin-top: 150px;
 }
 
+.mt-0 {
+  margin-top: 0px;
+}
+
+.mt-\[-20px\] {
+  margin-top: -20px;
+}
+
+.mt-\[-5px\] {
+  margin-top: -5px;
+}
+
 .inline-block {
   display: inline-block;
 }
 
+.inline {
+  display: inline;
+}
+
 .flex {
   display: flex;
+}
+
+.table {
+  display: table;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-1 {
@@ -643,20 +667,16 @@ video {
   height: 100vh;
 }
 
-.h-\[\] {
-  height: ;
+.h-\[20px\] {
+  height: 20px;
 }
 
-.h-\[600px\] {
-  height: 600px;
+.h-\[25px\] {
+  height: 25px;
 }
 
 .w-\[150px\] {
   width: 150px;
-}
-
-.w-\[400px\] {
-  width: 400px;
 }
 
 .w-screen {
@@ -677,6 +697,10 @@ video {
 
 .max-w-\[300px\] {
   max-width: 300px;
+}
+
+.max-w-\[400px\] {
+  max-width: 400px;
 }
 
 .max-w-\[450px\] {
@@ -701,10 +725,6 @@ video {
 
 .items-start {
   align-items: flex-start;
-}
-
-.justify-normal {
-  justify-content: normal;
 }
 
 .justify-between {
@@ -853,6 +873,10 @@ video {
   text-align: center;
 }
 
+.align-middle {
+  vertical-align: middle;
+}
+
 .font-poppins {
   font-family: Poppins, sans;
 }
@@ -974,29 +998,20 @@ video {
     max-width: 425px;
   }
 
-  .desktop-transition\:pt-\[100px\] {
-    padding-top: 100px;
-  }
-
   .desktop-transition\:pt-\[70px\] {
     padding-top: 70px;
   }
 }
 
 @media (max-width: 1024px) {
-  .laptop\:mx-auto {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .laptop\:mx-\[100px\] {
-    margin-left: 100px;
-    margin-right: 100px;
-  }
-
   .laptop\:mx-\[50px\] {
     margin-left: 50px;
     margin-right: 50px;
+  }
+
+  .laptop\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .laptop\:mb-\[10px\] {
@@ -1015,32 +1030,16 @@ video {
     margin-left: -200px;
   }
 
+  .laptop\:mt-0 {
+    margin-top: 0px;
+  }
+
   .laptop\:mt-\[20px\] {
     margin-top: 20px;
   }
 
   .laptop\:mt-\[40px\] {
     margin-top: 40px;
-  }
-
-  .laptop\:mt-\[50px\] {
-    margin-top: 50px;
-  }
-
-  .laptop\:mr-auto {
-    margin-right: auto;
-  }
-
-  .laptop\:mr-\[100px\] {
-    margin-right: 100px;
-  }
-
-  .laptop\:mt-\[px\] {
-    margin-top: px;
-  }
-
-  .laptop\:mt-0 {
-    margin-top: 0px;
   }
 
   .laptop\:block {
@@ -1055,12 +1054,8 @@ video {
     height: 1000px;
   }
 
-  .laptop\:h-\[70vh\] {
-    height: 70vh;
-  }
-
-  .laptop\:w-\[600px\] {
-    width: 600px;
+  .laptop\:h-\[900px\] {
+    height: 900px;
   }
 
   .laptop\:max-w-\[15vw\] {
@@ -1073,6 +1068,10 @@ video {
 
   .laptop\:max-w-\[600px\] {
     max-width: 600px;
+  }
+
+  .laptop\:max-w-full {
+    max-width: 100%;
   }
 
   .laptop\:flex-col {
@@ -1158,27 +1157,267 @@ video {
 }
 
 @media (max-width: 768px) {
-  .tablet\:mr-\[\] {
-    margin-right: ;
+  .tablet\:mx-\[20px\] {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .tablet\:mr-\[30px\] {
     margin-right: 30px;
   }
 
-  .tablet\:mt-\[\] {
-    margin-top: ;
-  }
-
-  .tablet\:mt-\[70px\] {
-    margin-top: 70px;
-  }
-
   .tablet\:mt-\[50px\] {
     margin-top: 50px;
   }
 
+  .tablet\:mr-0 {
+    margin-right: 0px;
+  }
+
+  .tablet\:mt-2 {
+    margin-top: 0.5rem;
+  }
+
+  .tablet\:mt-\[20px\] {
+    margin-top: 20px;
+  }
+
+  .tablet\:mt-\[100px\] {
+    margin-top: 100px;
+  }
+
+  .tablet\:mb-\[10px\] {
+    margin-bottom: 10px;
+  }
+
+  .tablet\:mb-\[-10px\] {
+    margin-bottom: -10px;
+  }
+
+  .tablet\:mb-0 {
+    margin-bottom: 0px;
+  }
+
+  .tablet\:mb-\[5px\] {
+    margin-bottom: 5px;
+  }
+
+  .tablet\:mt-\[15px\] {
+    margin-top: 15px;
+  }
+
+  .tablet\:block {
+    display: block;
+  }
+
+  .tablet\:hidden {
+    display: none;
+  }
+
+  .tablet\:h-\[650px\] {
+    height: 650px;
+  }
+
+  .tablet\:h-\[\] {
+    height: ;
+  }
+
+  .tablet\:h-\[500px\] {
+    height: 500px;
+  }
+
+  .tablet\:w-fit {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
+  .tablet\:w-\[\] {
+    width: ;
+  }
+
+  .tablet\:w-\[2\] {
+    width: 2;
+  }
+
+  .tablet\:w-\[100px\] {
+    width: 100px;
+  }
+
+  .tablet\:w-\[200px\] {
+    width: 200px;
+  }
+
+  .tablet\:w-\[150px\] {
+    width: 150px;
+  }
+
+  .tablet\:w-\[160px\] {
+    width: 160px;
+  }
+
+  .tablet\:max-w-\[\] {
+    max-width: ;
+  }
+
+  .tablet\:max-w-\[250px\] {
+    max-width: 250px;
+  }
+
+  .tablet\:max-w-full {
+    max-width: 100%;
+  }
+
+  .tablet\:flex-col {
+    flex-direction: column;
+  }
+
+  .tablet\:flex-col-reverse {
+    flex-direction: column-reverse;
+  }
+
   .tablet\:justify-normal {
     justify-content: normal;
+  }
+
+  .tablet\:px-\[\] {
+    padding-left: ;
+    padding-right: ;
+  }
+
+  .tablet\:px-\[10px\] {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .tablet\:pt-\[30px\] {
+    padding-top: 30px;
+  }
+
+  .tablet\:pt-\[\] {
+    padding-top: ;
+  }
+
+  .tablet\:pt-\[15px\] {
+    padding-top: 15px;
+  }
+
+  .tablet\:text-\[38px\] {
+    font-size: 38px;
+  }
+
+  .tablet\:text-\[28px\] {
+    font-size: 28px;
+  }
+
+  .tablet\:text-\[32px\] {
+    font-size: 32px;
+  }
+
+  .tablet\:text-\[20px\] {
+    font-size: 20px;
+  }
+
+  .tablet\:text-\[16px\] {
+    font-size: 16px;
+  }
+
+  .tablet\:text-\[18px\] {
+    font-size: 18px;
+  }
+
+  .tablet\:text-\[\] {
+    color: ;
+  }
+}
+
+@media (max-width: 425px) {
+  .mobile-L\:visible {
+    visibility: visible;
+  }
+
+  .mobile-L\:ml-\[5vw\] {
+    margin-left: 5vw;
+  }
+
+  .mobile-L\:block {
+    display: block;
+  }
+
+  .mobile-L\:hidden {
+    display: none;
+  }
+
+  .mobile-L\:h-\[550px\] {
+    height: 550px;
+  }
+
+  .mobile-L\:h-\[750px\] {
+    height: 750px;
+  }
+
+  .mobile-L\:h-\[25px\] {
+    height: 25px;
+  }
+
+  .mobile-L\:justify-around {
+    justify-content: space-around;
+  }
+
+  .mobile-L\:px-\[15px\] {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .mobile-L\:px-\[20px\] {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .mobile-L\:pt-\[20px\] {
+    padding-top: 20px;
+  }
+
+  .mobile-L\:text-\[40px\] {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 375px) {
+  .mobile-M\:h-\[650px\] {
+    height: 650px;
+  }
+
+  .mobile-M\:h-\[700px\] {
+    height: 700px;
+  }
+
+  .mobile-M\:text-\[38px\] {
+    font-size: 38px;
+  }
+
+  .mobile-M\:text-\[36px\] {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 320px) {
+  .mobile-S\:hidden {
+    display: none;
+  }
+
+  .mobile-S\:h-\[600px\] {
+    height: 600px;
+  }
+
+  .mobile-S\:h-\[620px\] {
+    height: 620px;
+  }
+
+  .mobile-S\:text-\[36px\] {
+    font-size: 36px;
+  }
+
+  .mobile-S\:text-\[32px\] {
+    font-size: 32px;
   }
 }
